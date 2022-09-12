@@ -19,7 +19,7 @@ provider "snowflake" {
 }
 
 resource "snowflake_database" "demo_db" {
-  name    = "DEMO1_DB"
+  name    = "SAGAR"
   comment = "Database for Snowflake Terraform demo"
 }
 
