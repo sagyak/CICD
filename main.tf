@@ -33,5 +33,5 @@ resource "snowflake_database" "from_replica" {
   name                        = "CLONE_CITIBIKE"
   comment                     = "test comment"
   data_retention_time_in_days = 3
-  from_replica                = snowflake_database.CITIBIKE
+  from_database                = snowflake_database.CITIBIKE
 }
