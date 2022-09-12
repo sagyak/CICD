@@ -33,5 +33,5 @@ resource "snowflake_database" "myclone" {
   name                        = "CLONE_CITIBIKE"
   comment                     = "test comment"
   data_retention_time_in_days = 3
-  from_replica                = "org1\".\"account1\"."\CITIBIKE"
+  from_replica                = "SNOWFLAKE\".\"ku73901\".\"CITIBIKE"
 }
