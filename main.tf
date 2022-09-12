@@ -29,9 +29,4 @@ resource "snowflake_schema" "demo_schema" {
   comment  = "Schema for Snowflake Terraform demo"
 }
 
-resource "snowflake_database" "from_replica" {
-  name                        = "CLONE_CITIBIKE"
-  comment                     = "test comment"
-  data_retention_time_in_days = 3
-  from_database                = snowflake_database.CITIBIKE
-}
+
