@@ -29,12 +29,12 @@ resource "snowflake_schema" "demo_schema" {
   comment  = "Schema for Snowflake Terraform demo"
 }
 
-resource "snowflake_database" "test_db" {
-  name    = "TEST"
+resource "snowflake_database" "test1_db" {
+  name    = "TEST1"
   comment = "Database for Snowflake Terraform demo"
 }
 
-resource "snowflake_schema" "test_schema" {
+resource "snowflake_schema" "test1_schema" {
   database = snowflake_database.test_db.name
   name     = "DEMO_SCHEMA"
   comment  = "Schema for Snowflake Terraform demo"
